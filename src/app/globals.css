@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%; /* Light grayish blue */
+    --foreground: 210 40% 9.8%; /* Darker for text on light background */
+    --card: 210 40% 100%; /* White card */
+    --card-foreground: 210 40% 9.8%;
+    --popover: 210 40% 100%;
+    --popover-foreground: 210 40% 9.8%;
+    --primary: 200 80% 50%; /* Nice blue */
+    --primary-foreground: 200 80% 98%; /* Light for contrast on primary */
+    --secondary: 210 30% 90%; /* Lighter secondary */
+    --secondary-foreground: 210 30% 20%; /* Darker secondary text */
+    --muted: 210 30% 94%; /* Muted background */
+    --muted-foreground: 210 30% 45%; /* Muted text */
+    --accent: 170 70% 45%; /* Teal accent */
+    --accent-foreground: 170 70% 95%; /* Light text on accent */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 30% 88%; /* Border color */
+    --input: 210 30% 92%; /* Input background */
+    --ring: 200 80% 55%; /* Ring color (slightly darker primary) */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+
+    /* Sidebar specific theme variables */
+    --sidebar-background: 220 20% 15%; /* Darker blue for sidebar */
+    --sidebar-foreground: 220 15% 80%; /* Light text for dark sidebar */
+    --sidebar-primary: 200 80% 60%; /* Brighter blue for active items in sidebar */
+    --sidebar-primary-foreground: 200 80% 98%;
+    --sidebar-accent: 220 20% 25%; /* Hover/accent on sidebar */
+    --sidebar-accent-foreground: 220 15% 90%;
+    --sidebar-border: 220 20% 20%;
+    --sidebar-ring: 200 80% 55%;
+  }
+
+  .dark {
+    --background: 210 20% 12%; /* Dark background */
+    --foreground: 210 20% 90%; /* Light text on dark background */
+    --card: 210 20% 15%; /* Dark card */
+    --card-foreground: 210 20% 90%;
+    --popover: 210 20% 15%;
+    --popover-foreground: 210 20% 90%;
+    --primary: 200 70% 55%; /* Slightly adjusted primary for dark */
+    --primary-foreground: 200 70% 10%; /* Darker for contrast on primary in dark */
+    --secondary: 210 15% 25%; /* Darker secondary */
+    --secondary-foreground: 210 15% 85%; /* Lighter secondary text */
+    --muted: 210 15% 22%; /* Muted background dark */
+    --muted-foreground: 210 15% 65%; /* Muted text dark */
+    --accent: 170 60% 50%; /* Slightly adjusted accent for dark */
+    --accent-foreground: 170 60% 10%; /* Dark text on accent in dark */
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 15% 30%; /* Border color dark */
+    --input: 210 15% 28%; /* Input background dark */
+    --ring: 200 70% 60%; /* Ring color dark */
+    
+    --sidebar-background: 220 10% 8%; 
+    --sidebar-foreground: 220 10% 75%;
+    --sidebar-primary: 200 70% 65%;
+    --sidebar-primary-foreground: 200 70% 95%;
+    --sidebar-accent: 220 10% 18%;
+    --sidebar-accent-foreground: 220 10% 85%;
+    --sidebar-border: 220 10% 15%;
+    --sidebar-ring: 200 70% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+}
